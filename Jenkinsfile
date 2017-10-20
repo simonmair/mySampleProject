@@ -12,7 +12,9 @@ pipeline {
                 sh 'mvn test pmd:pmd'
                 junit 'target/surefire-reports/*.xml' 
                 pmd canRunOnFailed: true, pattern: 'target/pmd.xml'
+                
             }
+            step([$class: 'PmdPublisher', pattern: '**/target/pmd.xml', unstableTotalAll:'0'])
         }
         stage('Deploy') {
             steps {
