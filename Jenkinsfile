@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test'){
             steps {
-                sh 'mvn test'
+                sh 'mvn test pmd:pmd'
                 junit 'target/surefire-reports/*.xml' 
             }
         }
