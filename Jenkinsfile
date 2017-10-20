@@ -14,7 +14,6 @@ pipeline {
                 pmd canRunOnFailed: true, pattern: 'target/pmd.xml'
                 
             }
-            step([$class: 'PmdPublisher', pattern: '**/target/pmd.xml', unstableTotalAll:'0'])
         }
         stage('Deploy') {
             steps {
