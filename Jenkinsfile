@@ -13,12 +13,6 @@ pipeline {
                 junit 'target/surefire-reports/*.xml' 
             }
         }
-        stage('CodeAnalysis') {
-            steps {
-                sh 'mvn pmd:pmd'
-                step([$class: 'hudson.plugins.pmd.PmdPublisher', checkstyle: '**/target/pmd.xml'])
-            }
-        }
         stage('Deploy') {
             steps {
                 sh 'echo "No docker, no cry ;)"'
