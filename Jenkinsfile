@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps { 
-                sh 'mvn clean -DskipTest -U deploy' 
+                sh 'mvn clean -DskipTest -U package' 
             }
         }
         stage('Test'){
@@ -17,13 +17,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo "No docker, no cry ;)"'
+                sh 'mvn -DskipTest deploy'
             }
-        }
-    }
-    post {
-        always {
-            archive 'target/*.jar'
         }
     }
 }
