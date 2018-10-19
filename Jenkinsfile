@@ -9,9 +9,8 @@ pipeline {
         }
         stage('Test'){
             steps {
-                sh 'mvn test pmd:pmd'
+                sh 'mvn test'
                 junit 'target/surefire-reports/*.xml' 
-                pmd canRunOnFailed: true, pattern: 'target/pmd.xml'
                 
             }
         }
