@@ -3,7 +3,7 @@
 	<groupId>at.fhv.teamxx</groupId>
 	<artifactId>mySampleProject</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.5-SNAPSHOT</version>
+	<version>1.1.5-SNAPSHOT</version>
 	<name>mySampleProject</name>
 	<url>http://maven.apache.org</url>
 	<properties>
