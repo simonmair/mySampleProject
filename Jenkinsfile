@@ -14,10 +14,5 @@ pipeline {
                 
             }
         }
-        stage('Deploy') {
-            steps {
-                sh 'mvn -DskipTest deploy'
-            }
-        }
     }
 }
