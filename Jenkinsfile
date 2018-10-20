@@ -13,5 +13,11 @@ pipeline {
                 junit 'target/surefire-reports/*.xml' 
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'echo "Deploying artifact to Nexus Repository"'
+                sh 'mvn -DskipTest deploy'
+            }
+        }
     }
 }
