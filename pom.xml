@@ -11,9 +11,9 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<scm>
-		<connection>scm:git:git@github.com:Bischi/mySampleProject.git</connection>
-		<developerConnection>scm:git:git@github.com:Bischi/mySampleProject.git</developerConnection>
-		<url>git@github.com:Bischi/mySampleProject.git</url>
+		<connection>scm:git:git@github.com:simonmair/mySampleProject.git</connection>
+		<developerConnection>scm:git:git@github.com:simonmair/mySampleProject.git</developerConnection>
+		<url>git@github.com:simonmair/mySampleProject.git</url>
 	        <tag>HEAD</tag>
         </scm>
 	<distributionManagement>
