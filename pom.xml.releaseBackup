@@ -3,7 +3,7 @@
 	<groupId>at.fhv.teamxx</groupId>
 	<artifactId>mySampleProject</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.3</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>mySampleProject</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -11,12 +11,12 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<scm>
-		<connection>scm:git:git@github.com:simonmair/mySampleProject.git</connection>
-		<developerConnection>scm:git:git@github.com:simonmair/mySampleProject.git</developerConnection>
-		<url>git@github.com:simonmair/mySampleProject.git</url>
-	        <tag>mySampleProject-1.0.3</tag>
-    </scm>
-	<!-- <distributionManagement>
+		<connection>scm:git:git@github.com:gtonic/mySampleProject.git</connection>
+		<developerConnection>scm:git:git@github.com:gtonic/mySampleProject.git</developerConnection>
+		<url>git@github.com:gtonic/mySampleProject.git</url>
+	        <tag>HEAD</tag>
+        </scm>
+	<distributionManagement>
    		<snapshotRepository>
       			<id>nexus-snapshots</id>
       			<url>http://10.0.51.99:8081/nexus/content/repositories/snapshots</url>
@@ -25,7 +25,7 @@
         		<id>nexus-releases</id>
         		<url>http://10.0.51.99:8081/nexus/content/repositories/releases/</url>
     		</repository>
-	</distributionManagement> -->
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -49,5 +49,5 @@
             	</configuration>
             </plugin>
         </plugins>
-    </reporting>
+        </reporting>
 </project>
